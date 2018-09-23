@@ -11,7 +11,7 @@
 ~/bin/install_vscode.sh
 ~/bin/install_grub-costumizer.sh
 #~/bin/install_virtualbox.sh
-#~/bin/install_vmware.sh
+bash ~/bin/install_vmware.sh
 #~/bin/install_wireshark.sh
 ~/bin/adduser_user.sh
 bash ~/bin/install_epoptes.sh
