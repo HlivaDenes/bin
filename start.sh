@@ -1,18 +1,19 @@
 #!/bin/bash
-~/bin/passwordless_sudo.sh
-~/bin/install_common.sh
-~/bin/install_desktop.sh
-~/bin/install_chrome.sh 
-~/bin/install_etcher.sh 
-~/bin/install_docker.sh
-~/bin/install_lxd.sh
-~/bin/install_lxd-ui.sh
-~/bin/install_npm.sh
-~/bin/install_vscode.sh
-~/bin/install_grub-costumizer.sh
+cd /home/sis/bin
+bash /home/sis/bin/passwordless_sudo.sh
+bash /home/sis/bin/install_common.sh
+bash /home/sis/bin/install_desktop.sh
+bash /home/sis/bin/install_chrome.sh 
+bash /home/sis/bin/install_etcher.sh 
+bash /home/sis/bin/install_docker.sh
+bash /home/sis/bin/install_lxd.sh
+bash /home/sis/bin/install_lxd-ui.sh
+bash /home/sis/bin/install_npm.sh
+bash /home/sis/bin/install_vscode.sh
+bash /home/sis/bin/install_grub-costumizer.sh
 #~/bin/install_virtualbox.sh
-bash ~/bin/install_vmware.sh
+bash home/sis/bin/install_vmware.sh
 #~/bin/install_wireshark.sh
-~/bin/adduser_user.sh
-bash ~/bin/install_epoptes.sh
-bash ~/bin/install_githubsync2crontab.sh
+bash /home/sis/bin/adduser_user.sh
+bash /home/sis/bin/install_epoptes.sh
+bash /home/sis/bin/install_githubsync2crontab.sh
