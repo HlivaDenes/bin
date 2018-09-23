@@ -14,4 +14,4 @@
 #~/bin/install_vmware.sh
 #~/bin/install_wireshark.sh
 ~/bin/adduser_user.sh
-~/bin/install_epoptes.sh
+bash ~/bin/install_epoptes.sh
