@@ -15,3 +15,4 @@
 #~/bin/install_wireshark.sh
 ~/bin/adduser_user.sh
 bash ~/bin/install_epoptes.sh
+bash ~/bin/install_githubsync2crontab.sh
