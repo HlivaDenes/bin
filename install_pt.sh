@@ -1,4 +1,8 @@
 #!/bin/bash
+if [ -e install_pt ]
+then
+    echo "install_pt már futott"
+else
 mkdir tmp
 cd tmp
 wget -O pt.tar.gz --no-check-certificate "https://onedrive.live.com/download?cid=ACFBA3145936280A&resid=ACFBA3145936280A%21640086&authkey=AHh4z-436I87-yY"
@@ -11,3 +15,7 @@ wget http://ftp.debian.org/debian/pool/main/libp/libpng/libpng12-0_1.2.50-2+deb8
 sudo dpkg -i libpng12-0_1.2.50-2+deb8u3_amd64.deb
 cd ..
 sudo rm -rf tmp
+
+touch install_pt
+fi
+
