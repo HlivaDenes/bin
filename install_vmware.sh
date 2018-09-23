@@ -10,7 +10,7 @@ mkdir ~/vmware
 cd ~/vmware
 wget -c https://download3.vmware.com/software/player/file/VMware-Player-14.1.3-9474260.x86_64.bundle
 sudo chmod u+x VMware-Player*
-sudo ./VMware-Player-14.1.3-9474260.x86_64.bundle --console
+sudo ./VMware-Player-14.1.3-9474260.x86_64.bundle --console --required --eulas-agreed
 cd ~/bin
 touch install_vmware
 fi
