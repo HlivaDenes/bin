@@ -11,6 +11,6 @@ echo `date` >>/tmp/cronhourly
 EOF
 chown root:root githubsync
 chmod +x githubsync
-mv githubsync /etc/cron.hourly
+sudo mv githubsync /etc/cron.hourly
 touch install_githubsync2crontab
 fi
