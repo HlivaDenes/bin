@@ -17,5 +17,6 @@ bash /home/sis/bin/install_vmware.sh
 bash /home/sis/bin/adduser_user.sh
 bash /home/sis/bin/adduser_win.sh
 bash /home/sis/bin/adduser_vm.sh
+bash /home/sis/bin/adduser_hg.sh
 bash /home/sis/bin/install_epoptes.sh
 bash /home/sis/bin/install_githubsync2crontab.sh
