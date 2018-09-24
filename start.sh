@@ -15,5 +15,7 @@ bash /home/sis/bin/install_grub-costumizer.sh
 bash /home/sis/bin/install_vmware.sh
 #~/bin/install_wireshark.sh
 bash /home/sis/bin/adduser_user.sh
+bash /home/sis/bin/adduser_win.sh
+bash /home/sis/bin/adduser_vm.sh
 bash /home/sis/bin/install_epoptes.sh
 bash /home/sis/bin/install_githubsync2crontab.sh
