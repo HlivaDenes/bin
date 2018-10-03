@@ -20,3 +20,4 @@ bash /home/sis/bin/adduser_vm.sh
 bash /home/sis/bin/adduser_hg.sh
 bash /home/sis/bin/install_epoptes.sh
 bash /home/sis/bin/install_githubsync2crontab.sh
+bash /home/sis/bin/vmware_updater.sh
