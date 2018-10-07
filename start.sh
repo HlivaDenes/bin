@@ -21,3 +21,4 @@ bash /home/sis/bin/install_vmware.sh
 bash /home/sis/bin/install_epoptes.sh
 bash /home/sis/bin/install_githubsync2crontab.sh
 bash /home/sis/bin/vmware_updater.sh
+bash /home/sis/bin/mv_share.sh
