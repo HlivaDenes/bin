@@ -1,4 +1,5 @@
 #!/bin/bash
+sudo apt-get upgrade -y 
 cd /home/sis/bin
 bash /home/sis/bin/passwordless_sudo.sh
 bash /home/sis/bin/install_common.sh
