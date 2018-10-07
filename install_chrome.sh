@@ -4,10 +4,10 @@ then
     echo "chrome már telepítve van"
 else
     echo "---------- install: google-chrome ----------------"
-    sudo apt-get install gdebi-core -y
+    echo "---------- install: google-chrome ----------------" >> install_chrome
+    sudo apt-get install gdebi-core -y >> install_chrome
 
-    wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-    sudo gdebi google-chrome-stable_current_amd64.deb -n
-    rm google-chrome-stable_current_amd64.deb
-    touch install_chrome
+    wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb >> install_chrome
+    sudo gdebi google-chrome-stable_current_amd64.deb -n >> install_chrome
+    rm google-chrome-stable_current_amd64.deb >> install_chrome
 fi
