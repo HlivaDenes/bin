@@ -5,4 +5,6 @@ then
 else
 sudo adduser diak --gecos "diak,,," --disabled-password
 echo "diak:diak" | sudo chpasswd
+cd /home/diak
+git init
 fi
