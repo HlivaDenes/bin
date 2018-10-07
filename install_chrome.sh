@@ -10,4 +10,5 @@ else
     wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb >> install_chrome
     sudo gdebi google-chrome-stable_current_amd64.deb -n >> install_chrome
     rm google-chrome-stable_current_amd64.deb >> install_chrome
+    echo "************* google-chrome telepítve **************" >> install_chrome
 fi
