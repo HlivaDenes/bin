@@ -4,18 +4,15 @@ if [ -e install_desktop ]
 then
     echo "install_desktop már telepítve"
 else
-echo "---------- update upgrade -----------------"
-sudo apt-get update
-sudo apt-get upgrade -y
-
-echo "----------- install: mc nmap gdebi----------------"
-sudo apt-get install terminator guake guake-indicator gdebi-core -y
-
-echo "----------- install: vlc ----------------"
-sudo apt-get install  vlc  -y
-
-echo "----------- install: gnome-tweek-tool ----------------"
-sudo apt install gnome-tweak-tool -y
-gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
-touch install_desktop
+echo "`date` --------------------" >> install_desktop
+sudo apt-get update >> install_desktop
+sudo apt-get upgrade -y >> install_desktop
+sudo apt-get install terminator -y >> install_desktop
+sudo apt-get install guake -y >> install_desktop
+sudo apt-get install guake-indicator -y >> install_desktop
+sudo apt-get install gdebi-core -y >> install_desktop
+sudo apt-get install  vlc  -y >> install_desktop
+sudo apt install gnome-tweak-tool -y >> install_desktop
+gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize' >> install_desktop
+echo "`date` =========================" >> install_desktop
 fi
