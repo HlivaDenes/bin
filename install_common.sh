@@ -4,14 +4,14 @@ if [ -e install_common ]
 then
     echo "install_common már telepítve"
 else
-echo "---------- update upgrade -----------------"
-sudo apt-get update
-sudo apt-get upgrade -y
-
-echo "----------- install: mc nmap gdebi----------------"
-sudo apt-get install mc curl nmap gdebi-core  openssh-server -y
-
-sudo apt autoremove -y
-sudo chmod u+x ./*
-touch install_common
+echo "`date` ----------------" >> install_common
+sudo apt-get update >> install_common
+sudo apt-get upgrade -y >> install_common
+sudo apt-get install mc -y >> install_common
+sudo apt-get install curl -y >> install_common
+sudo apt-get install nmap -y >> install_common
+sudo apt-get install gdebi-core -y >> install_common
+sudo apt-get install openssh-server -y >> install_common
+sudo apt autoremove -y >> install_common
+echo "`date` ==================" >> install_common
 fi
