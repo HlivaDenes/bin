@@ -7,7 +7,7 @@ else
 cat <<EOF> githubsync
 #!/bin/bash
 cd /home/sis/bin && git fetch --all && git checkout --force "origin/master" && /home/sis/bin/start.sh
-echo "`date` >>/tmp/cronhourly"
+date >> /tmp/cronhourly"
 
 EOF
 
