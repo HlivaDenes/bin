@@ -8,6 +8,6 @@ wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key a
 sudo add-apt-repository "deb http://download.virtualbox.org/virtualbox/debian $(lsb_release -cs) contrib" -y
 sudo apt-get update
 sudo apt-get virtualbox-5.2 -y
-sudo apt-get install virtualbox-ext-pack -y
+####sudo apt-get install virtualbox-ext-pack -y
 
 
