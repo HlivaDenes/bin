@@ -1,11 +1,11 @@
 #!/bin/bash
-if [ -e install_epoptes_3 ]
+if [ -e install_epoptes_4 ]
 then
-    echo "install_epoptes_3 már futott"
+    echo "install_epoptes_4 már futott"
 else
-echo "`date`-------------install_epoptes_3---------------------" >> install_epoptes_3
-sudo apt-get install epoptes-client -y >> install_epoptes_3
-sudo rm /etc/default/epoptes-client >> install_epoptes_3
+echo "`date`-------------install_epoptes_4---------------------" >> install_epoptes_4
+sudo apt-get install epoptes-client -y >> install_epoptes_4
+sudo rm /etc/default/epoptes-client >> install_epoptes_4
 cat<<EOF> epoptes-client
 SERVER=192.168.0.100
 #PORT=789
@@ -13,7 +13,7 @@ SERVER=192.168.0.100
 WOL=g
 EOF
 sudo mv epoptes-client /etc/default/
-sudo epoptes-client -c >> install_epoptes_3
+sudo epoptes-client -c >> install_epoptes_4
 #sudo reboot
-echo "`date`************install_epoptes_2******************" >> install_epoptes_3
+echo "`date`************install_epoptes_4******************" >> install_epoptes_4
 fi
