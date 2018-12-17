@@ -13,6 +13,6 @@ sudo apt-get install curl -y >> install_common_2018-12-10
 sudo apt-get install nmap -y >> install_common_2018-12-10
 sudo apt-get install gdebi-core -y >> install_common_2018-12-10
 sudo apt-get install openssh-server -y >> install_common_2018-12-10
-sudo apt autoremove -y >> install_common_2018-12-10
+sudo apt-get autoremove -y >> install_common_2018-12-10
 echo "`date` ==================" >> install_common_2018-12-10
 fi
