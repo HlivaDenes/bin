@@ -15,7 +15,7 @@ bash /home/sis/bin/install_common.sh
 ########bash /home/sis/bin/install_virtualbox.sh
 #bash /home/sis/bin/install_vmware.sh
 #~/bin/install_wireshark.sh
-#bash /home/sis/bin/adduser_cad.sh
+bash /home/sis/bin/adduser_diak.sh
 #bash /home/sis/bin/install_epoptes.sh
 bash /home/sis/bin/install_githubsync2crontab.sh
 #bash /home/sis/bin/vmware_updater.sh
