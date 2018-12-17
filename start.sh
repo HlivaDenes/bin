@@ -2,7 +2,7 @@
 #sudo apt-get upgrade -y 
 cd /home/sis/bin
 bash /home/sis/bin/passwordless_sudo.sh
-#bash /home/sis/bin/install_common.sh
+bash /home/sis/bin/install_common.sh
 #bash /home/sis/bin/install_desktop.sh
 #bash /home/sis/bin/install_chrome.sh 
 #bash /home/sis/bin/install_etcher.sh 
