@@ -1,18 +1,14 @@
 #!/bin/sh
-
-if [ -e install_common_2018-12-10 ]
+flag='install_common_2018-12-30
+if [ -e $flag ]
 then
-    echo "install_common már telepítve"
+    echo '$flag már telepítve'
 else
-echo "`date` ----------------" >> install_common
-sudo apt-get update >> install_common_2018-12-10
-sudo apt-get upgrade -y >> install_common_2018-12-10
-sudo apt-get dist-upgrade -y >> install_common_2018-12-10
-sudo apt-get install mc -y >> install_common_2018-12-10
-sudo apt-get install curl -y >> install_common_2018-12-10
-sudo apt-get install nmap -y >> install_common_2018-12-10
-sudo apt-get install gdebi-core -y >> install_common_2018-12-10
-sudo apt-get install openssh-server -y >> install_common_2018-12-10
-sudo apt-get autoremove -y >> install_common_2018-12-10
-echo "`date` ==================" >> install_common_2018-12-10
+echo "`date` -----start-----------" >> $flag
+sudo apt-get update -y |tee $flag && \
+sudo apt-get upgrade -y |tee $flag && \
+sudo apt-get dist-upgrade -y |tee && \
+sudo apt-get install mc curl nmap gdebi-core openssh-server -y |tee $flag
+sudo apt-get autoremove -y 
+echo "`date` ========stop==========" >> $flag
 fi
