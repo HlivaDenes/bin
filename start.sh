@@ -18,7 +18,6 @@ bash /home/sis/bin/install_virtualbox.sh
 #bash /home/sis/bin/install_npm.sh
 #bash /home/sis/bin/install_vscode.sh
 #bash /home/sis/bin/install_grub-costumizer.sh
-########bash /home/sis/bin/install_virtualbox.sh
 #bash /home/sis/bin/install_vmware.sh
 #~/bin/install_wireshark.sh
 #bash /home/sis/bin/install_epoptes.sh
