@@ -3,8 +3,8 @@
 cd /home/sis/bin
 bash /home/sis/bin/passwordless_sudo.sh
 bash /home/sis/bin/install_githubsync2crontab.sh
-bash /home/sis/bin/install_ansible.sh
 bash /home/sis/bin/install_common.sh
+bash /home/sis/bin/install_ansible.sh
 bash /home/sis/bin/install_desktop.sh
 bash /home/sis/bin/install_chrome.sh 
 bash /home/sis/bin/adduser_diak.sh
