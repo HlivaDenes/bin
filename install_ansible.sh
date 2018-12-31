@@ -1,13 +1,16 @@
-#!/bin/bash
-if [ -e install_ansible_18-10-27]
+#!/bin/sh
+flag='install_ansible_2018-12-31'
+if [ -e $flag ]
 then
-  echo "install_ansible már futott"
+    echo '$flag már telepítve'
 else
-  echo "`date`-------------------------" >> install_ansible_18-10-27
-  sudo apt-get update >> install_ansible_18-10-27
-  sudo apt-get install software-properties-common -y >> install_ansible_18-10-27
-  sudo apt-add-repository ppa:ansible/ansible -y >> install_ansible_18-10-27
-  sudo apt-get update  >> install_ansible_18-10-27
-  sudo apt-get install ansible -y  >> install_ansible_18-10-27
-  echo "`date`**************************" >> install_ansible_18-10-27
+    echo "`date` -----start-----------" |tee $flag
+    sudo apt-get update -y |tee error && \
+    sudo apt-get upgrade -y |tee $flag && \
+    sudo apt-get  install software-properties-common -y |tee $flag && \
+    sudo apt-add-repository ppa:ansible/ansible -y |tee $flag && \
+    sudo apt-get update -y |tee $flag && \
+    sudo apt-get install ansible -y |tee $flag && \
+    sudo apt-get autoremove -y | tee $flag
+    echo "`date` ========stop==========" |tee $flag
 fi
