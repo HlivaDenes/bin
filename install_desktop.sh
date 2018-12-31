@@ -1,18 +1,20 @@
-#!/bin/sh
 
-if [ -e install_desktop ]
-then
-    echo "install_desktop már telepítve"
-else
-echo "`date` --------------------" >> install_desktop
-sudo apt-get update >> install_desktop
-sudo apt-get upgrade -y >> install_desktop
-sudo apt-get install terminator -y >> install_desktop
-sudo apt-get install guake -y >> install_desktop
-sudo apt-get install guake-indicator -y >> install_desktop
-sudo apt-get install gdebi-core -y >> install_desktop
-sudo apt-get install  vlc  -y >> install_desktop
-sudo apt-get install gnome-tweak-tool -y >> install_desktop
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize' >> install_desktop
 echo "`date` =========================" >> install_desktop
+fi
+
+#!/bin/sh
+flag='install_desktop_2018-12-31'
+if [ -e $flag ]
+then
+    echo '$flag már telepítve'
+else
+    echo "`date` -----start--desktop---------"
+    sudo apt-get update -y |tee error && \
+    sudo apt-get upgrade -y |tee $flag && \
+    sudo apt-get dist-upgrade -y |tee $flag && \
+    sudo apt-get install terminator guake guake-indicator gdebi-core vlc gnome-tweak-tool -y |tee $flag && \
+    sudo apt-get autoremove -y | tee $flag && \
+    gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize' |tee $flag && \
+    echo "`date` ========stop==desktop========" |tee $flag
 fi
