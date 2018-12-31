@@ -6,7 +6,6 @@ then
 else
     echo "`date` -----start-----------" |tee $flag
     sudo apt-get update -y |tee error && \
-    sudo apt-get upgrade -y |tee $flag && \
     sudo apt-get  install software-properties-common -y |tee $flag && \
     sudo apt-add-repository ppa:ansible/ansible -y |tee $flag && \
     sudo apt-get update -y |tee $flag && \
