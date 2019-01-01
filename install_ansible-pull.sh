@@ -1,5 +1,5 @@
 #!/bin/sh
-flag='install_ansible-pull_2019-01-01'
+flag='install_ansible-pull_2019-01-01b'
 if [ -e $flag ]
 then
     echo '$flag már telepítve'
