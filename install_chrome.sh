@@ -1,14 +1,14 @@
 #!/bin/sh
-if [ -e install_chrome ]
+flag='install_chrome'
+if [ -e $flag ]
 then
     echo "chrome már telepítve van"
 else
-    echo "---------- install: google-chrome ----------------"
-    echo "---------- install: google-chrome ----------------" >> install_chrome
-    sudo apt-get install gdebi-core -y >> install_chrome
-
-    wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb >> install_chrome
-    sudo gdebi google-chrome-stable_current_amd64.deb -n >> install_chrome
-    rm google-chrome-stable_current_amd64.deb >> install_chrome
-    echo "************* google-chrome telepítve **************" >> install_chrome
+    echo "`date` -----start-----------" |tee  $flag && \
+    echo "`date` install: google-chrome ----------------" |tee  $flag && \
+    sudo apt-get install gdebi-core -y  |tee  $flag && \
+    wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb  |tee  $flag && \
+    sudo gdebi google-chrome-stable_current_amd64.deb -n   |tee  $flag && \
+    rm google-chrome-stable_current_amd64.deb   |tee  $flag && \
+    echo "`date` ************* google-chrome telepítve **************"  |tee  $flag 
 fi
